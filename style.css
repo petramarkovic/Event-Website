@@ -1,0 +1,152 @@
+*, body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*NAVBAR*/
+.logo {
+    width: 150px;
+    display: block;
+}
+
+ul {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a:hover {
+    color: #531B1B;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: #531B1B 1px solid;
+}
+
+.social-media a {
+    padding: 10px 10px;
+    margin-right: 20px;
+}
+
+#dropdown-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/*HEADER*/
+header img {
+    width: 100%;
+    height: auto;
+    border-bottom: 10px #531B1B solid;
+}
+
+.responsive-header {
+    display: none;
+}
+
+/*SLIDESHOW*/
+.slideshow-container {
+    width: 100%;
+    display: flex;
+}
+
+.mySlides {
+    display: none;
+    padding: 10px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text-container {
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-container p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.read-more {
+    color: #fff;
+    background-color: #531B1B;
+    padding: 10px 30px;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+.read-more:hover {
+    background-color: #000;
+    padding: 20px 40px;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+    transition: font-size 0.3s ease-in-out;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*FOOTER*/
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 888px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .social-media {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header {
+        background-color: #000;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .responsive-header {
+        display: block;
+    }
+
+    .slideshow-container {
+        display: block;
+    }
+}

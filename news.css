@@ -1,0 +1,36 @@
+h5 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #531b1b;
+}
+
+.news-container {
+    background-color: rgb(68, 64, 64);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    margin: 20px;
+}
+
+.box img {
+    border: 2px solid #531b1b;
+    width: 100%;
+}
+
+@media (max-width:768px){
+    .news-container {
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
